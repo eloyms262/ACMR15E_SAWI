@@ -1,4 +1,7 @@
 import Image from "next/image";
+import Donate from "./DonateB";
+import Sponsor from "./SponsorB";
+
 export default function HeroSection() {
   return (
     <div>
@@ -16,6 +19,8 @@ export default function HeroSection() {
           Bayanihan Para <br /> sa Magsasaka
         </h1>
       </div>
+      <Donate/>
+      <Sponsor/>
 
       <div></div>
     </div>
