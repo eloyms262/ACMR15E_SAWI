@@ -11,7 +11,7 @@ export default function Footer(){
                         width={250}
                         height={125}
                         alt="For our farmers Logo"
-                        className="center object-contain h-100 w-250"
+                        className="center object-contain"
                     />
                 </div>  
                 <div className="flex justify-center sm:mb-6">
