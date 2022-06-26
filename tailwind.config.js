@@ -8,7 +8,15 @@ module.exports = {
     extend: { 
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        roboto: ["Roboto", "sans-serif"],
+        nunito: ["Nunito", "sans-serif"]
       },
+      fontSize:{
+        'menu': '.65rem',
+      },
+      colors:{
+        'menu-txt':'#424242',
+      }
     },
   },
   plugins: [],
