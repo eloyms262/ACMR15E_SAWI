@@ -17,19 +17,19 @@ export default function Footer(){
                 <div className="flex justify-center sm:mb-6">
                     <ul className=" items-center grid grid-cols-3 gap-1 text-[#228833]  lg:gap-6">
                         <li>
-                            <Link href="#" className="mr-2 hover:underline md:mr-4  ">Home</Link>
+                            <Link href="/" className="mr-2 hover:underline md:mr-4  ">Home</Link>
                         </li>
                         <li>
-                            <Link href="#" className="mr-2 hover:underline md:mr-4">Projects</Link>
+                            <Link href="../projects/" className="mr-2 hover:underline md:mr-4">Projects</Link>
                         </li>
                         <li>
-                            <Link href="#" className="mr-2 hover:underline md:mr-4 ">Donation</Link>
+                            <Link href="../donation/" className="mr-2 hover:underline md:mr-4 ">Donation</Link>
                         </li>
                         <li>
-                            <Link href="#" className="mr-2 hover:underline md:mr-4">About</Link>
+                            <Link href="../about/" className="mr-2 hover:underline md:mr-4">About</Link>
                         </li>
                         <li>
-                            <Link href="#" className="mr-2 hover:underline md:mr-4">Partners</Link>
+                            <Link href="../partners/" className="mr-2 hover:underline md:mr-4">Partners</Link>
                         </li>
                         <li>
                             <Link href="../contact/" className="hover:underline">Contact</Link>
