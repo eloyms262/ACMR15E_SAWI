@@ -13,7 +13,6 @@ import { HiMenu } from "react-icons/hi";
 import { MdAssistantNavigation } from "react-icons/md";
 import { useRef, useEffect } from "react";
 import { useRouter } from "next/router";
-import Link from "next/link";
 import NavLink from "./nav-link";
 
 export const navLinks = [

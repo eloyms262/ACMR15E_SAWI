@@ -11,7 +11,6 @@ function MyApp({ Component, pageProps }) {
       <MobileNavBar />
       <Component {...pageProps} />
       <ChatButton />
-      <div className="h-screen bg-slate-500"></div>
       <FooterSection />
     </ChakraProvider>
   );
