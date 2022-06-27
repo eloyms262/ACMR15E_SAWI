@@ -32,7 +32,7 @@ export default function Footer(){
                             <Link href="#" className="mr-2 hover:underline md:mr-4">Partners</Link>
                         </li>
                         <li>
-                            <Link href="#" className="hover:underline">Contact</Link>
+                            <Link href="../contact/" className="hover:underline">Contact</Link>
                         </li>
                     </ul>
                 </div>
