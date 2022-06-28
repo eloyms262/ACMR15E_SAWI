@@ -10,7 +10,7 @@ export default function ProjDetails(props) {
         <p className="text-sm break-words indent-7 h-32">{props.content}</p>
       </div>
       <div className="flex justify-end mb-8 mr-8">
-        <Link href={"/about"}>
+        <Link href={"/projects"}>
           <p className="font-roboto text-sm p-2 font-bold bg-[#E9ED37] rounded-xl">
             Find out more
           </p>

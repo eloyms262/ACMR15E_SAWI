@@ -3,16 +3,16 @@ import { FiChevronsRight } from "react-icons/fi";
 export default function BriefAbout() {
   return (
     <div
-      className="-mt-10 mx-auto relative h-44 w-11/12 flex flex-col bg-[#fffde9] rounded-xl"
+      className="-mt-10 mx-auto relative w-11/12 h-56 flex flex-col bg-[#fffde9] rounded-xl"
       style={{ filter: "drop-shadow(0 5px 0.2rem black)" }}
     >
-      <div className="font-nunito object-left-top text-sm pt-4 pl-3 text-black">
-        <h1>#ForOurFarmers</h1>
+      <div className="font-nunito object-left-top text-lg pt-3 pl-3 text-black indent-4">
+        <h1> Our Story</h1>
       </div>
       <div className="flex flex-col pl-5 pt-1">
         <div className="h-3/5 w-0.5 absolute  bg-[#F33C3C] "></div>
         <p
-          className="text-menu text-black font-openSans break-words pl-3 pt-1"
+          className="text-btnPrj text-black font-openSans break-words pl-3 pt-1"
           color="white"
         >
           We started as a COVID-19 donation drive initiative to help farmers who
