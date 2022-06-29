@@ -4,7 +4,7 @@ export default function ContactPage() {
     return (
     <div>
         <div>
-            <img src="/images/Group_pic.JPG" />
+            <img src="/images/Group_pic.jpg" />
         </div>
         <div className="flex flex-col-reverse lg:mx-10 my-10">
             <ContactDetails/>

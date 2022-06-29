@@ -1,8 +1,5 @@
-import { useState } from "react";
 import Image from "next/image";
 export default function MemberDetails(props){
-    const [isClicked, setIsClicked] = useState(false);
-    const clicked = () => setIsClicked(true);
     return(
         <div className="divide-y divide-dashed mx-2 text-center p-1 flex-col items-center mb-10 w-full">
             <div className="m-3 px-8">

@@ -6,7 +6,7 @@ export default function Content1(){
                 <div className="lg:w-6/12 h-full">
                     <div className="lg:w-full lg:px-10">
                         <Image
-                        src={"/images/about-us/history.jpg"}
+                        src={"/images/about-us/history.JPG"}
                         layout="responsive"
                         width="100"
                         height="60"
