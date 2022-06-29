@@ -6,7 +6,7 @@ export default function HomePage() {
   return (
     <div>
       <HeroSection />
-      <div class="bg-green-100">
+      <div className="bg-green-100">
         <BriefAbout />
         <LatestProj />
         <SocialSection />
