@@ -2,7 +2,7 @@ import Image from "next/image";
 export default function Content1(){
     return(
         <div className="lg:m-8">
-            <div className="lg:flex lg:flex-row lg:p-10 lg:mx-20 items-center mt-14 p-3">
+            <div className="lg:flex lg:flex-row lg:p-10 lg:mx-20 items-center mt-14 p-3 bg-[#fffde9]    border lg:rounded-xl" >
                 <div className="lg:w-6/12 h-full">
                     <div className="lg:w-full lg:px-10">
                         <Image
@@ -28,7 +28,7 @@ export default function Content1(){
                     </div>
                 </div>
             </div>
-            <div className="lg:flex lg:flex-row-reverse lg:p-10 lg:mx-20 items-center mt-14 p-3">
+            <div className="lg:flex lg:flex-row-reverse lg:p-10 lg:mx-20 items-center mt-14 p-3 bg-[#fffde9]    border lg:rounded-xl mb-8">
                 <div className="lg:w-6/12">
                     <Image
                     src={"/images/about-us/Why.jpeg"}
