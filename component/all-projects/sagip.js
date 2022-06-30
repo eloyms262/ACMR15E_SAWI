@@ -59,6 +59,21 @@ export default function SagipSection() {
           ))}
         </div>
       </div>
+      <div className="flex flex-col items-center justify-center">
+        <h1>Ways to Donate</h1>
+        <div className="">
+          <div className="flex flex-row">
+            <img src="images/all-projects/donation/donate1.webp" />
+            <img src="images/all-projects/donation/donate2.webp" />
+            <img src="images/all-projects/donation/donate3.webp" />
+          </div>
+          <div className="">
+            <h1>Our Project Sagip Donation Lines</h1>
+            <img src="images/all-projects/donation/details1.webp" />
+            <img src="images/all-projects/donation/details2.webp" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
