@@ -5,8 +5,8 @@ export default function PartnerPage() {
     <div>
       <div className="relative flex items-center justify-center">
         <img
-          src="/images/Group_pic.JPG"
-          className="brightness-50 contrast-75"
+          src="/images/our-partners/head.jpeg"
+          className="brightness-50 contrast-75 w-full lg:h-screen"
         />
         <div className="absolute">
           <h1

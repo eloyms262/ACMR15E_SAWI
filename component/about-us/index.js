@@ -6,7 +6,7 @@ export default function AboutUs() {
     <div className="w-full bg-green-50">
       <div className="relative flex items-center justify-center">
         <img
-          src="/images/all-projects/hero.JPG"
+          src="/images/about-us/head.jpg"
           className="brightness-50 contrast-75 lg:h-screen w-full "
         />
         <div className="absolute ">
