@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
+import CollectionPics from "./collection";
 export const details = [
   {
     imgPath: "/images/all-projects/sagip/p1.jpeg",
@@ -37,18 +38,39 @@ export default function SagipSection() {
     },
   });
   return (
-    <div className="bg-green-200">
-      <h1 className="flex justify-center font-poppins font-bold text-2xl py-4 text-green-800">
+    <div className="bg-green-100">
+      <h1 className="flex justify-center font-poppins font-bold text-2xl py-4 text-green-800 lg:text-3xl ">
         Project Sagip
       </h1>
-      <div className="navigation-wrapper">
+      <div className="lg:flex lg:flex-row lg:w-11/12 lg:mx-auto lg:mb-14 hidden">
+        <img
+          src="/images/all-projects/sagip/p1.jpeg"
+          className="mt-2 w-4/12 h-4/12"
+        />
+        <div className="flex flex-col">
+          {details.map((d) => (
+            <div
+              key={d.imgPath}
+              className=" flex flex-col items-center text-md font-openSans text-black "
+            >
+              <p className="w-10/12 indent-12 text-justify lg:text-lg">
+                <br />
+                {d.content}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="navigation-wrapper lg:hidden">
         <div ref={sliderRef} className="keen-slider ">
           {details.map((d) => (
             <div
               key={d.title}
               className="keen-slider__slide flex flex-col items-center text-md font-openSans text-black "
             >
-              <p className="w-10/12 indent-12 text-justify">{d.content}</p>
+              <p className="w-10/12 indent-12 text-justify lg:text-xl">
+                {d.content}
+              </p>
               <img
                 src={d.imgPath}
                 width={d.imgWidth}
@@ -59,18 +81,38 @@ export default function SagipSection() {
           ))}
         </div>
       </div>
+      <CollectionPics />
       <div className="flex flex-col items-center justify-center">
-        <h1>Ways to Donate</h1>
-        <div className="">
-          <div className="flex flex-row">
-            <img src="images/all-projects/donation/donate1.webp" />
-            <img src="images/all-projects/donation/donate2.webp" />
-            <img src="images/all-projects/donation/donate3.webp" />
-          </div>
-          <div className="">
-            <h1>Our Project Sagip Donation Lines</h1>
-            <img src="images/all-projects/donation/details1.webp" />
-            <img src="images/all-projects/donation/details2.webp" />
+        <h1 className="mt-7 text-lg font-inter font-bold text-green-800 lg:text-3xl">
+          Ways to Donate
+        </h1>
+        <div className="flex flex-col mx-auto md:flex-row w-11/12 lg:mt-6 ">
+          <img
+            src="images/all-projects/donation/donate1.webp"
+            className="mx-8 mb-4 "
+          />
+          <img
+            src="images/all-projects/donation/donate2.webp"
+            className="mx-8 mb-4"
+          />
+          <img
+            src="images/all-projects/donation/donate3.webp"
+            className="mx-8 mb-7"
+          />
+        </div>
+        <div className=" w-11/12 flex flex-col justify-center items-center ">
+          <h1 className=" text-lg font-inter font-bold text-green-800 mt-3 mb-4   lg:text-3xl">
+            Project Sagip Donation Lines
+          </h1>
+          <div className="lg:flex lg:flex-row">
+            <img
+              src="images/all-projects/donation/details1.webp"
+              className="w-80 mb-4 mx-12"
+            />
+            <img
+              src="images/all-projects/donation/details2.webp"
+              className="w-80 mb-4 mx-12"
+            />
           </div>
         </div>
       </div>

@@ -1,7 +1,9 @@
+import DonateSection from "../../component/donate";
+
 export default function DonatePage() {
   return (
     <div>
-      <h1>Donation page</h1>
+      <DonateSection />
     </div>
   );
 }

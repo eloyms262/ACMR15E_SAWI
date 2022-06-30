@@ -87,19 +87,19 @@ export default function CollectionPics() {
     [ThumbnailPlugin(instanceRef)]
   );
   return (
-    <div>
+    <div className="mt-5 lg:w-11/12 lg:mx-auto">
       {" "}
-      <div ref={sliderRef} className="keen-slider ">
+      <div ref={sliderRef} className="keen-slider lg:h-screen ">
         {collection.map((d) => (
           <div
             key={d.imgPath}
-            className="keen-slider__slide flex items-center justify-center bg-orange-400 text-xl text-white h-48 max-h-max"
+            className="keen-slider__slide flex items-center justify-center bg-orange-400 text-xl text-white h-48  "
           >
             <img
               src={d.imgPath}
               style={{ objectFit: "contain" }}
               width={d.imgWidth}
-              className="bg-contain object-top w-full"
+              className="bg-contain object-top w-full "
             />
           </div>
         ))}
@@ -108,7 +108,7 @@ export default function CollectionPics() {
         {collection.map((d) => (
           <div
             key={d.imgPath}
-            className="keen-slider__slide flex items-center justify-center bg-orange-400 text-xl text-white h-20 w-40 bg-contain"
+            className="keen-slider__slide flex items-center justify-center bg-orange-400 text-xl text-white h-20 w-40 bg-contain lg:h-44 lg:bg-cover"
             style={{ backgroundImage: `url(${d.imgPath})` }}
           ></div>
         ))}

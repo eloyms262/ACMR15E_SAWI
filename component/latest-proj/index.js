@@ -9,31 +9,32 @@ export const details = [
     imgPath: "/images/latest-proj/sagip.jpg",
     content:
       "Project Sagip is a crowd-funding initiative launched to help and assist our fellow Kababayans particularly local farmers who are severely affected by Typhoon Quinta, Rolly and Ulysses.",
-    imgWidth: 350,
-    imgHeigth: 350,
+    imgWidth: 400,
+    imgHeigth: 400,
   },
   {
     title: "Brigada Eskuwela",
-    imgPath: "/images/latest-proj/brigada.jpeg",
+    imgPath: "/images/latest-proj/brigs.webp",
     content:
       "Brigada Eskuwela is an initiative to help and support young farmers with their distance learning.",
-    filled: "fill",
+    imgHeigth: 400,
+    imgWidth: 400,
   },
   {
     title: "Sponsor-A-Farmer",
     imgPath: "/images/latest-proj/sponsor.png",
     content:
       "We help local farmers and fisherfolks by giving them grocery packs, term life insurance, hermetic technology bags which they can use to improve the shelf life of their product and water-bill subsidy for a month.",
-    imgWidth: 450,
-    imgHeigth: 350,
+    imgWidth: 400,
+    imgHeigth: 400,
   },
   {
     title: "For Our Farmers' Scholarship",
     imgPath: "/images/latest-proj/students.webp",
     content:
       "FOFS helps and assist young farmers and farmer’s children with their education. We established FOFS to help local farmers and fisherfolks with the pressing problem of declining numbers of youth enrolled in school, specifically those from the farming community.",
-    imgWidth: 350,
-    imgHeigth: 350,
+    imgWidth: 400,
+    imgHeigth: 400,
   },
 ];
 
@@ -51,74 +52,82 @@ export default function LatestProj() {
   });
   return (
     <>
-      <div className="flex flex-col relative w-11/12 mx-auto mt-5">
-        <h1 className="mx-auto font-inter text-lg font-bold text-green-700 mb-5">
+      <div className="flex flex-col w-11/12 mx-auto mt-12  ">
+        <h1 className="mx-auto font-inter text-lg font-bold text-green-700 mb-5 lg:text-3xl ">
           Our Latest Projects
         </h1>
-        <div ref={sliderRef} className="keen-slider  rounded-t-md">
-          {details.map((d) => (
+        <div className="lg:flex lg:flex-row lg:justify-center">
+          <div className="relative  lg:w-1/4 lg:inline-block ">
             <div
-              key={d.title}
-              className="keen-slider__slide flex items-center justify-center bg-orange-400 text-xl text-white h-48 max-h-max"
+              ref={sliderRef}
+              className="keen-slider rounded-t-md lg:rounded-md  "
             >
-              <Image
-                src={d.imgPath}
-                width={d.imgWidth}
-                height={d.imgHeigth}
-                layout={d.filled}
-              />
+              {details.map((d) => (
+                <div
+                  key={d.title}
+                  className="keen-slider__slide flex items-center justify-center bg-orange-400 text-xl text-white h-48  lg:w-80 lg:h-full   "
+                >
+                  <Image
+                    src={d.imgPath}
+                    width={d.imgWidth}
+                    height={d.imgHeigth}
+                    layout={d.filled}
+                  />
+                </div>
+              ))}
             </div>
-          ))}
-          {loaded && instanceRef.current && (
-            <div className="flex left-1/2 -translate-x-1/2 bottom-3 absolute">
-              {[
-                ...Array(
-                  instanceRef.current.track.details.slides.length
-                ).keys(),
-              ].map((idx) => {
-                return (
-                  <button
-                    key={idx}
-                    onClick={() => {
-                      instanceRef.current?.moveToIdx(idx);
-                    }}
-                    className={
-                      "border-none w-2 h-2 bg-[#c5c5c5] rounded-full mr-3 md:cursor-pointer" +
-                      (currentSlide === idx ? " bg-red-600" : "")
-                    }
-                  ></button>
-                );
-              })}
-            </div>
-          )}
+            {loaded && instanceRef.current && (
+              <div className="flex left-1/2 -translate-x-1/2 bottom-3 absolute">
+                {[
+                  ...Array(
+                    instanceRef.current.track.details.slides.length
+                  ).keys(),
+                ].map((idx) => {
+                  return (
+                    <button
+                      key={idx}
+                      onClick={() => {
+                        instanceRef.current?.moveToIdx(idx);
+                      }}
+                      className={
+                        "border-none w-2 h-2 bg-[#c5c5c5] rounded-full mr-3 md:cursor-pointer" +
+                        (currentSlide === idx ? " bg-red-600" : "")
+                      }
+                    ></button>
+                  );
+                })}
+              </div>
+            )}
+            {loaded && instanceRef.current && (
+              <>
+                <Arrow
+                  left
+                  onClick={(e) =>
+                    e.stopPropagation() || instanceRef.current?.prev()
+                  }
+                  disabled={currentSlide === 0}
+                />
+
+                <Arrow
+                  onClick={(e) =>
+                    e.stopPropagation() || instanceRef.current?.next()
+                  }
+                  disabled={
+                    currentSlide ===
+                    instanceRef.current.track.details.slides.length - 1
+                  }
+                />
+              </>
+            )}
+          </div>
+          <div className="lg:max-w-2xl  ">
+            <ProjDetails
+              title={details[currentSlide].title}
+              content={details[currentSlide].content}
+            />
+          </div>
         </div>
-
-        {loaded && instanceRef.current && (
-          <>
-            <Arrow
-              left
-              onClick={(e) =>
-                e.stopPropagation() || instanceRef.current?.prev()
-              }
-              disabled={currentSlide === 0}
-            />
-
-            <Arrow
-              onClick={(e) =>
-                e.stopPropagation() || instanceRef.current?.next()
-              }
-              disabled={
-                currentSlide ===
-                instanceRef.current.track.details.slides.length - 1
-              }
-            />
-          </>
-        )}
       </div>
-      <ProjDetails
-        title={details[currentSlide].title}
-        content={details[currentSlide].content}
-      />
     </>
   );
 }
