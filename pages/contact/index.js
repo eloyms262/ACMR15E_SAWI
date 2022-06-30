@@ -1,5 +1,5 @@
 import ContactForms from "../../component/Contacts/ContactF";
-import ContactDetails from "../../component/social";
+import ContactDetails from "../../component/Contacts/ContactD";
 export default function ContactPage() {
   return (
     <div>
