@@ -101,17 +101,17 @@ export default function SagipSection() {
           />
         </div>
         <div className=" w-11/12 flex flex-col justify-center items-center ">
-          <h1 className=" text-lg font-inter font-bold text-green-800 mt-3 mb-4   lg:text-3xl">
+          <h1 className=" text-lg font-inter font-bold text-green-800 mt-3 mb-4 lg:text-3xl">
             Project Sagip Donation Lines
           </h1>
-          <div className="lg:flex lg:flex-row">
+          <div className="lg:flex lg:flex-row items-center w-11/12">
             <img
               src="images/all-projects/donation/details1.webp"
-              className="w-80 mb-4 mx-12"
+              className="w-80 mb-4 lg:ms-12"
             />
             <img
               src="images/all-projects/donation/details2.webp"
-              className="w-80 mb-4 mx-12"
+              className="w-80 mb-4 lg:ms-12"
             />
           </div>
         </div>
