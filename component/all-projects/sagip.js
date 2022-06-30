@@ -107,11 +107,11 @@ export default function SagipSection() {
           <div className="lg:flex lg:flex-row items-center w-11/12">
             <img
               src="images/all-projects/donation/details1.webp"
-              className="w-80 mb-4 lg:ms-12"
+              className="w-80 mb-4 lg:m-12"
             />
             <img
               src="images/all-projects/donation/details2.webp"
-              className="w-80 mb-4 lg:ms-12"
+              className="w-80 mb-4 lg:m-12"
             />
           </div>
         </div>
