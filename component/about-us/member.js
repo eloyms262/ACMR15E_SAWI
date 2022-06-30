@@ -1,7 +1,10 @@
 import Image from "next/image";
+import { useState } from "react";
+
 export default function MemberDetails(props){
+    const [isTruncated, setIsTruncated] = useState(true)
     return(
-        <div className="divide-y divide-dashed mx-2 text-center p-1 flex-col items-center mb-10 w-full">
+        <div className="divide-y divide-dashed mx-2 text-center p-1 lg:p-4 flex-col items-center mb-10 w-full border bg-orange-100 rounded-t-xl">
             <div className="m-3 px-8">
             <Image
                     src={props.ImgLoc}
@@ -13,7 +16,7 @@ export default function MemberDetails(props){
             </div>
             <div className="font-bold h-10 w-full my-auto"><span>{props.name}</span></div>
             <div className="inline-block align-middle italic h-20 w-full  my-auto">{props.title}</div>
-            <div className="text-justify indent-10 pt-4 w-full h-64 overflow-hidden">
+            <div className="text-justify indent-10 pt-4 w-full h-64 overflow-hidden" number>
                 {props.describe}
             </div>
         </div>

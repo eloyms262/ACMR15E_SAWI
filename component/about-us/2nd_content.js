@@ -1,6 +1,8 @@
-import Tadena from "./member"
+import Tadena from "./member";
+
 export const details =[
     {
+
         ImgLoc: "/images/about-us/anj.jpg",
         name: "ANJANETTE S. TADENA",
         title: "Founder and Head of Operations - Pangasinan",
@@ -57,9 +59,9 @@ export const details =[
 ]
 export default function Content2(){
     return(
-    <div>
+    <div className="bg-slate-50 pt-10">
         <h1 className="text-center font-bold mb-5">MEET THE TEAM</h1>
-        <div className="lg:px-20 lg:mx-20 grid lg:grid-cols-3 sm:grid-cols-1 gap-5 sm:px-10 sm:mx-10">
+        <div className="lg:p-10 lg:mx-20 grid lg:grid-cols-3 sm:grid-cols-1 gap-5 sm:px-10 sm:mx-10">
             {details.map((d) => (
                 <div key={d.title} className="">
                     <Tadena ImgLoc={d.ImgLoc}
