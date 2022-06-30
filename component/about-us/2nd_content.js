@@ -85,7 +85,7 @@ export const details = [
 export default function Content2() {
   return (
     <div>
-      <h1 className="text-center font-bold mb-5">MEET THE TEAM</h1>
+      <h1 className="text-center font-bold mb-5 lg:text-2xl lg:my-8">MEET THE TEAM</h1>
       <div className="lg:px-20 lg:mx-20 grid lg:grid-cols-3 sm:grid-cols-1 gap-5 sm:px-10 sm:mx-10">
         {details.map((d) => (
           <div key={d.title} className="">
