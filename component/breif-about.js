@@ -10,9 +10,9 @@ export default function BriefAbout() {
         <h1 className="lg:text-3xl "> #ForOurFarmers</h1>
       </div>
       <div className="flex flex-col pl-5 pt-1 ">
-        <div className="h-36 w-1 absolute  bg-[#F33C3C]  "></div>
+        <div className="h-36 w-1 absolute  bg-[#F33C3C] lg:ml-4 "></div>
         <p
-          className="text-btnPrj text-black font-openSans break-words pl-3 pt-1 lg:text-xl lg:w-11/12 lg:break-words lg:mx-8 lg:text-justify"
+          className="text-btnPrj text-black font-openSans break-words pl-3 pt-1 lg:text-xl lg:w-11/12 lg:break-words lg:mx-8 lg:pl-0 lg:text-justify"
           color="white"
         >
           We started as a COVID-19 donation drive initiative to help farmers who

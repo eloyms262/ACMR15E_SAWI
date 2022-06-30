@@ -53,7 +53,7 @@ export default function LatestProj() {
   return (
     <>
       <div className="flex flex-col w-11/12 mx-auto mt-12  ">
-        <h1 className="mx-auto font-inter text-lg font-bold text-green-700 mb-5 lg:text-3xl ">
+        <h1 className="mx-auto font-inter text-lg font-bold text-green-600 mb-5 lg:text-3xl ">
           Our Latest Projects
         </h1>
         <div className="lg:flex lg:flex-row lg:justify-center">
