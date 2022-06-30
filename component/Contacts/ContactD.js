@@ -40,12 +40,12 @@ export default function SocialSection() {
         </div>
         <div className="h-0.5 w-3/5 mx-auto bg-pink-700 rounded-lg"> </div>
         <div className="mx-auto">
-          <h1 className="text-nunito text-lg text-pink-700">
+          <h1 className="text-nunito lg:text-2xl text-lg text-pink-700">
             Follow us for more update!
           </h1>
         </div>
         <div className="mx-auto">
-          <Image src={"/images/bonsai-tree.png"} width={100} height={150} />
+          <Image src={"/images/bonsai-tree.png"} width={150} height={225} />
         </div>
       </div>
     </div>

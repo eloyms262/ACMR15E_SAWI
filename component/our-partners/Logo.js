@@ -5,7 +5,7 @@ export default function LogoR(Imahe){
                 src={Imahe.ImgLoc}
                 width={1000}
                 height={1000}
-                alt="Image of ANJANETTE S. TADENA"
+                alt={Imahe.ImgLoc}
                 className="center object-contain rounded-full bg-white"
                 />
     )
