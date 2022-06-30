@@ -6,6 +6,7 @@ export default function Footer() {
     <footer className="p-3 bg-[#F5F5DC] lg:px-24 lg:pt-10 lg:pb-6">
       <div className="items-center justify-between grid grid-cols-1 lg:grid-cols-3">
         <div className="flex justify-center sm:mb-6">
+        <Link href={"/"}>
           <Image
             src={"/images/FOF_Logo_Cropped.png"}
             width={150}
@@ -13,6 +14,7 @@ export default function Footer() {
             alt="For our farmers Logo"
             className="center object-contain"
           />
+          </Link>
         </div>
         <div className="flex justify-center sm:mb-6">
           <ul className=" items-center grid grid-cols-3 gap-1 text-[#228833]  lg:gap-6">
