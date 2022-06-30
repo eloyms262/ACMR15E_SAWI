@@ -1,6 +1,6 @@
 export default function ContactForms(){
     return(
-        <div className="w-full">
+        <div className="w-full ">
             <h1 className="text-center font-md lg:font-extrabold text-lg lg:text-4xl mt-4">Contact Us</h1>
             <form className="m-5 px-8 py-5 flex flex-col text-sm border border-[#EEEEEE] bg-[#E5E5BC] gap-2 lg:rounded-xl lg:text-xl">
                 <label className="">
