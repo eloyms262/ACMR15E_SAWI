@@ -52,7 +52,7 @@ export default function LatestProj() {
   return (
     <>
       <div className="flex flex-col relative w-11/12 mx-auto mt-5">
-        <h1 className="mx-auto font-inter text-green-700 mb-5">
+        <h1 className="mx-auto font-inter text-lg font-bold text-green-700 mb-5">
           Our Latest Projects
         </h1>
         <div ref={sliderRef} className="keen-slider  rounded-t-md">

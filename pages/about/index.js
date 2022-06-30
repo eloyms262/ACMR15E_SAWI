@@ -7,3 +7,4 @@ export default function ProjectPage() {
     </div>
   );
 }
+ProjectPage.title = "About Us";

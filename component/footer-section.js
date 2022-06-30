@@ -8,8 +8,8 @@ export default function Footer() {
         <div className="flex justify-center sm:mb-6">
           <Image
             src={"/images/FOF_Logo_Cropped.png"}
-            width={250}
-            height={125}
+            width={150}
+            height={140}
             alt="For our farmers Logo"
             className="center object-contain"
           />
